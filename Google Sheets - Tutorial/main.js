@@ -1,4 +1,6 @@
 
+//D1 - Expliquei quais são os métodos que podemos usar para pegar uma planilha: 
+
 function spreadsheet_get(){
     // A planilha que vamos abrir
     // let ss = SpreadsheetApp.getActiveSpreadsheet(); // pegar planilha ativa
@@ -14,3 +16,19 @@ function spreadsheet_get(){
     let data1 = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues();
     Logger.log(data1);
 }
+
+//Você pode criar um crud para a planilha :
+// usando como referencia os conceitos encontrados no link: https://developers.google.com/apps-script/reference/spreadsheet
+
+// get - pegar dados
+function spreadsheet_read(){}
+
+// post - criar dados
+function spreadsheet_create(){}
+
+// put/update - atualizar dados
+function spreadsheet_update(){}
+
+// delete - deletar dados
+function spreadsheet_delete(){}
+
